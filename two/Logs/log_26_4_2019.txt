@@ -1,0 +1,34 @@
+► Title - 
+	Current Domain Unhandled Exception - Unknow
+▬ Message - 
+	未将对象引用设置到对象的实例。
+♦ Date/Hour - 
+	2019/4/26 16:43:03
+▲ Source - 
+	mscorlib
+▼ TargetSite - 
+	System.Runtime.Remoting.Messaging.IMessage EndInvokeHelper(System.Runtime.Remoting.Messaging.Message, Boolean)
+♠ StackTrace - 
+
+Server stack trace: 
+   在 ScreenToGif.Windows.Editor.ImportFrom(String fileName, String pathTemp)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.EndInvokeHelper(Message reqMsg, Boolean bProxyCase)
+   在 System.Runtime.Remoting.Proxies.RemotingProxy.Invoke(Object NotUsed, MessageData& msgData)
+   在 ScreenToGif.Windows.Editor.ImportFrames.EndInvoke(IAsyncResult result)
+   在 ScreenToGif.Windows.Editor.ImportFromCallback(IAsyncResult ar)
+   在 System.Runtime.Remoting.Messaging.AsyncResult.SyncProcessMessage(IMessage msg)
+   在 System.Runtime.Remoting.Messaging.StackBuilderSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+   在 System.Runtime.Remoting.Proxies.AgileAsyncWorkerItem.ThreadPoolCallBack(Object o)
+   在 System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   在 System.Threading.ThreadPoolWorkQueue.Dispatch()
+   在 System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+
+----------------------------------
+
